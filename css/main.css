@@ -1,0 +1,392 @@
+body{
+	background-color: #F4F4F8;
+}
+.all{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 2.6875rem;
+}
+.footer{
+	width: 100%;
+	height: 2.6875rem;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background-color: white;
+	z-index: 1;
+}
+.footer ul{
+	width: 100%;
+	height: 2.6875rem;
+	display: flex;
+	flex: 1;
+}
+.footer li{
+	width: 5rem;
+	height: 2.5625rem;
+	text-align: center;
+}
+.footer-img{
+	width: 1.28125rem;
+	height: 1.28125rem;
+	margin: 0.3125rem auto 0.0625rem;
+}
+.footer-t{
+	font-size: 0.625rem;
+}
+.t1{
+	color: #FF464E;
+}
+
+/* 顶部栏 */
+.header{
+	width: 100%;
+	height: 3rem;
+}
+/* <!-- 搜索栏 --> */
+.search{
+	width: 100%;
+	height: 2.375rem;
+	box-sizing: border-box;
+	padding-left:0.9375rem;
+}
+.search-cont{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.search-k{
+	width: 16.875rem;
+	height: 1.5rem;
+	position: relative;
+	background-color: #f2f2f2;
+	border-radius: 0.625rem;
+	display: flex;
+	align-items: center;
+}
+.search-icon{
+	width: 1rem;
+	height: 1rem;
+	margin: 0 0.1875rem;
+}
+.search-icon i{
+	font-weight: 700;
+	color: rgb(153, 153, 153);
+}
+.search-img img{
+	width: 1.125rem;
+	height: 0.8125rem;
+	margin-right: 0.1875rem;
+}
+.search-t{
+	color: rgb(153, 153, 153);
+	font-size: 0.6875rem;
+}
+.search-r{
+	width: 2.375rem;
+	height: 2.375rem;
+}		
+/* <!-- 轮播图 --> */
+.scroll{
+	width: 100%;
+	height: 7.75rem;
+	overflow: hidden;
+	position: relative;
+}
+.scroll-ul{
+	display: flex;
+	flex: 1;
+	width: 100rem;
+	height: 7.75rem;
+	position: absolute;
+	left: 0px;
+	animation: mymove 20s infinite;
+}
+.scroll-ul li{
+	width: 20rem;
+	height: 100%;
+}
+.scroll-ul li>img{
+	width: 20rem;
+	height: 100%;
+}
+@keyframes mymove{
+	0%,15%{
+		left:0;
+	}
+	20%,35%{
+		left: -20rem;
+	}
+	40%,55%{
+		left: -40rem;
+	}
+	60%,75%{
+		left: -60rem;
+	}
+	80%,95%{
+		left:-80rem;
+	}
+	100%{
+		left:-100rem;
+	}
+}
+/* 导航 */
+.nav{
+	width: 100%;
+	height: 4.5rem;
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+}
+.nav-img{
+	height: 100%;
+	width: 5.0625rem;
+}
+/* 内容 */
+.cont1{
+	width: 100%;
+	height: 5.5625rem;
+}
+.cont2{
+	width: 100%;
+	height: 2.6875rem;
+}
+.cont3{
+	width: 100%;
+	height: 5rem;
+}
+.kind{
+	width: 100%;
+	height: 5.4375rem;
+	display: flex;
+	flex: 1;
+}
+.kind-1{
+	width: 50%;
+	height: 100%;
+}
+.cont-t{
+	width: 100%;
+	height: 2.5625rem;
+	margin-top: 0.3125rem;
+}
+.sort{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 2.375rem;
+	margin-top: 0.3125rem;
+	display: flex;
+}
+.sort-t1{
+	width: 3.5rem;
+	height: 2.1875rem;
+	line-height: 2.1875rem;
+	margin: 0 0.5rem;
+	border-bottom: 3px solid #FF464E;
+	color: #ff464e;
+	font-size: 0.875rem;
+}
+.sort-t2{
+	width: 3.5rem;
+	height: 2.1875rem;
+	line-height: 2.1875rem;
+	margin: 0 0.5rem;
+	font-size: 0.875rem;
+}
+/* 商品 */
+.goods{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.goods-l{
+	width:9.9375rem;
+	height: 12.875rem;
+	margin-right: 0.0625rem;
+	margin-top: 0.0625rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.goods-l-img{
+	width: 9.9375rem;
+	height: 9.9375rem;
+}
+.img-p1{
+	width: 2.4375rem;
+	height: 2.4375rem;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+}
+.img-p2{
+	width: 2.6875rem;
+	height: 1.3125rem;
+	position: absolute;
+	right: 0rem;
+	top:9.25rem ;
+	background-color: white;
+	border: 0.0625rem solid #F4F4F8;
+}
+.goods-l-t1{
+	width: 9.9375rem;
+	height: 1.1875rem;
+	line-height:1.1875rem ;
+	padding-top:-0.625rem;
+	background-color: white;
+	padding-left: 0.3125rem;
+}
+.goods-l-t1 span{
+	color: #ff464e;
+	font-size: 0.8125rem;
+}
+.goods-l-t2{
+	width: 9.9375rem;
+	height: 1.625rem;
+	padding: 0rem 0rem 0.625rem 0.3125rem;
+	background-color: white;
+}
+.goods-l-t2 span:nth-child(1){
+	display: inline-block;
+	height: 0.9375rem;
+	width: 5rem;
+	font-size: 0.5625rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.goods-l-t1 span:nth-child(2){
+	color: #bbb;
+	font-size: 0.6875rem;
+	text-decoration: line-through;
+}
+.goods-r{
+	width:9.9375rem;
+	height: 12.875rem;
+	margin-top: 0.0625rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: white;
+}
+/* 第二页 */
+.head-box{
+	width: 100%; 
+	height: 2.75rem; 
+	background-color: white;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	z-index: 1;
+}
+.head-m{
+	margin: 0.5rem;
+	width: 95%;
+	height: 1.875rem;
+    border: 0.0625rem solid #bbb;
+    border-radius:0.3125rem;
+    background-color: #fff;
+    padding: 0.15625rem 0;
+	display: flex;
+	color: #BBBBBB;
+	align-items: center;
+}
+.head-m i{
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-right: 0.3125rem;
+}
+.left-m{
+	width: 5rem;
+	height: 100%;
+	padding-top: 2.875rem;
+	padding-bottom:2.6875rem ;
+	position: relative;
+	overflow: hidden;
+}
+.left-m ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	overflow: auto;
+	background-color: #F4F4F8;
+	font-size: 0.875rem;
+}
+.left-m ul>li:nth-child(1){
+	width: 100%;
+	height: 2.875rem;
+	border-bottom: 0.0625rem solid #EBEBEB;
+	border-left: 0.1875rem solid #FF464E;
+	line-height: 2.875rem;
+	text-align: center;
+	color: #FF464E;
+	background-color: #FFFFFF;
+}
+.left-m ul>li{
+	width: 100%;
+	height: 2.875rem;
+	border-bottom: 0.0625rem solid #EBEBEB;
+	border-left: 0.1875rem solid #F4F4F8;
+	line-height: 2.875rem;
+	text-align: center;
+}
+.warper-m{
+	width: 14.375rem;
+	padding-left: 0.625rem;
+	height:100%;
+	padding-top: 2.875rem;
+}
+.sort-m{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+.warper-1{
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	flex: 1;
+}
+.warper-cont1{
+	width: 4.5625rem;
+	height: 5rem;
+	position: relative;
+	padding: 0rem 0.6875rem;
+	text-align: center;
+	font-size: 0.75rem;
+}
+.warper-cont1 img{
+	width: 3.125rem;
+	height: 3.125rem;
+}
+.icon{
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	background-color: #5698F3;
+	color: white;
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+	text-align: center;
+	font-size: 0.5rem;
+	line-height: 1.5625rem;
+}
+.icon1{
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	background-color: #FF464E;
+	color: white;
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+	text-align: center;
+	font-size: 0.5rem;
+	line-height: 1.5625rem;
+}
